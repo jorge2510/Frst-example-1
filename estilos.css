@@ -1,0 +1,21 @@
+.title-main {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    
+}
+
+.container-main {
+    list-style: none;
+    text-decoration-line: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    display:flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+li {
+    align-items: center;
+    color: red;
+    text-shadow: 15px solid black;
+}
