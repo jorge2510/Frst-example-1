@@ -31,3 +31,17 @@ Para confirmar podemos usar ``` git remote``` dando como resultado la palabra or
 
 Usando ```git pull origin main``` traemos los documentos hacia la rama main.
 y si usamos ```git pull origin main --allow-unrelated-histories``` para hacer un merge con la rama main y fucionarlas.
+
+## Como mirar los diferentes commits de una forma mas organizada
+
+Podemos usar el comando ```git log --all --graph --decorate --oneline``` y asi nos mostrara el historial de commits de una forma mas grafica. El comando es muy largo y para eso podemos crear un alias. 
+```alias arbolito = "git log --all --graph --decorate --oneline"```. Ahora solo basta con escribir ```arbolito``` en la consola y ya se ejecuta.
+
+## Usar tags
+```git tag``` show all tags
+```git show-ref --tags``` show all tags with references
+```git tag -a v0.1 -m "Tu comentario para referenciarlo" ubicacionDElCommit``` con este comando hacemos un tag en una version especifica.
+para mandarlo al repositorio virtual se usa ```git push --tag```
+
+```git tag -d v0.1``` para eliminar el tag cread anterior mente
+y para borrarlo de la interfaz de github se usa ```git push origin :refs/tags/v0.1```
