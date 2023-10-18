@@ -23,3 +23,11 @@ Para crear la llave usamos el comando ```ssh-keygen -t rsa -b 4096 -C "tucorreo@
 a continuacion te muestra la ubicacion de la llave en una carpeta oculta, tu puedes cambiarla si es tu deseo.
 Una vez que tengas tu llave, la abres y la pones en git hub, pero antes tienes que probar que esten corriendo usando este comando ```eval $(ssh-agent -s)```
 Para agregar la llave tenemos que recordar en donde esta ubicada y usar este comando ```ssh-add ~/.ssh/id_rsa```, debes tener cuidado de no compartir la llave privada.
+
+### Como conectar el tu proyecto local a un repositorio remoto en Git Hub
+
+Para esto debemos ubicarnos en la carpeta de el proyecto, y ejecutamos el comando ```git remote add origin direccioHTTPSdetuProyecto```.
+Para confirmar podemos usar ``` git remote``` dando como resultado la palabra origin, tambien podemos ejecutar ```git remote -v``` para conocer los comandos de push y fetch
+
+Usando ```git pull origin main``` traemos los documentos hacia la rama main.
+y si usamos ```git pull origin main --allow-unrelated-histories``` para hacer un merge con la rama main y fucionarlas.
