@@ -16,3 +16,10 @@ Para enviar mensajes cifrados se necesita el conocimiento del manejo de llaves p
 ### Crear llave en git hub
 
 Para crear la lleva nos debemos ubicar en home ~, ya que las llaves no son ni por repositorios, ni por archivo, son por personas
+
+En caso de que queramos cambiar el correo de configuracion del git usamos ```git config --global user.email "tucorreo@gmail.com"``` y para poder mirar los cambios usamos ```git config -l```. El correo tiene que ser el mismo el cual tenemos vinculado el repositorio en git hub.
+
+Para crear la llave usamos el comando ```ssh-keygen -t rsa -b 4096 -C "tucorreo@gmail.com"```
+a continuacion te muestra la ubicacion de la llave en una carpeta oculta, tu puedes cambiarla si es tu deseo.
+Una vez que tengas tu llave, la abres y la pones en git hub, pero antes tienes que probar que esten corriendo usando este comando ```eval $(ssh-agent -s)```
+Para agregar la llave tenemos que recordar en donde esta ubicada y usar este comando ```ssh-add ~/.ssh/id_rsa```, debes tener cuidado de no compartir la llave privada.
