@@ -45,3 +45,6 @@ para mandarlo al repositorio virtual se usa ```git push --tag```
 
 ```git tag -d v0.1``` para eliminar el tag cread anterior mente
 y para borrarlo de la interfaz de github se usa ```git push origin :refs/tags/v0.1```
+# Configurar múltiples colaboradores en un repositorio de GitHub
+
+Si tienes varios colaboradores es necesario agregar sus emails a tu repositorio o nicknames en su defecto, etrando a config de tu repos y add people
