@@ -1,4 +1,8 @@
-![](./imagenes/F3-1%20(1).jpg)
+<div align="center">
+	<a href="https://wureset.com/">
+		<img src="https://media.citizen.co.za/wp-content/uploads/2022/01/F3-1.jpg" alt="Logo" height="300" width="400">
+	</a>
+</div>
 
 
 # Frst-example-1
@@ -51,3 +55,15 @@ y para borrarlo de la interfaz de github se usa ```git push origin :refs/tags/v0
 # Configurar múltiples colaboradores en un repositorio de GitHub
 
 Si tienes varios colaboradores es necesario agregar sus emails a tu repositorio o nicknames en su defecto, etrando a config de tu repos y add people
+
+## Pagina web con gitHUb
+
+visitar el link [Pagina de github](https://pages.github.com/)
+Lo principal es crear un repositorio hosteado. Crear un repositorio con tu nombre de ususario y el domonio de git ```username.github.io```. publico.
+
+Te ubicas en home y usas ```git clone (direcciondelrepositorioDeTunombre)```
+
+Crear archivo html ```vin index.html```
+Luego haces commit, una vez hecho esto luego haces un ```git pull origini main``` como buena practica y luego un push de ese mismo.
+
+Tienes que configurar el repositorio para que git hub lo corra como pagina, settings-code and automation-GitHub Pages y en Source le pones master branch. 
