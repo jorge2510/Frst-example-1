@@ -67,3 +67,13 @@ Crear archivo html ```vin index.html```
 Luego haces commit, una vez hecho esto luego haces un ```git pull origini main``` como buena practica y luego un push de ese mismo.
 
 Tienes que configurar el repositorio para que git hub lo corra como pagina, settings-code and automation-GitHub Pages y en Source le pones master branch. 
+
+## Git stash
+
+## Eliminar archivos no deseados
+
+usas ```git clean --dry-run``` y para confirmarlo usas ```git clean -f```. Git no borra carpetas ni imagenes, para borrarlas toca hacerlo manualmente 
+
+## Traer commits desde cualquier lado al main
+
+se usa ```git cherry-pick (direcciondelcommit)```
