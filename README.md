@@ -1,3 +1,6 @@
+![](./imagenes/F3-1%20(1).jpg)
+
+
 # Frst-example-1
 Apuntes importantes
 ## Estamos probando el manejo de diferenetes branch.
